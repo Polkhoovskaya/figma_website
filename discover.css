@@ -1,0 +1,51 @@
+.discoverMainSection {
+    display: flex;
+    justify-content: space-between;
+    /* Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера. */
+    align-items: center;
+    flex-grow: 1;
+}
+
+.discoverMainSection .coverImage {
+    width: 30vw;
+    height: auto;
+    margin-left: 2rem;
+    max-width: 350px;
+}
+
+.iconSection {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem;
+    padding: 0.75rem;
+    width: 100px;
+    height: 100px;
+    background-color: #202027;
+}
+
+.icon img {
+    width: 40px;
+}
+
+@media (max-width: 800px) {
+    .discoverMainSection {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .discoverMainSection .callToAction {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .discoverMainSection .coverImage {
+        display: none;
+    }
+}

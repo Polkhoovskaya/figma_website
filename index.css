@@ -1,0 +1,53 @@
+.homeMainSection {
+    display: flex;
+    justify-content: space-between;
+    /* Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера. */
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.homeMainSection .imgWrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+
+.homeMainSection .ladyImage {
+    background-image: url(images/landing-page-girl.png);
+    flex-grow: 1;
+    max-height: 70vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+}
+
+.homeMainSection .callToAction {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+}
+
+.homePageCircle1 {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 128, 0.1);
+    position: absolute;
+    bottom: 4vw;
+    left: 5vw;
+    z-index: -1;
+}
+
+@media (max-width: 800px) {
+    .homeMainSection .imgWrapper {
+        display: none;
+    }
+    .homeMainSection {
+        justify-content: center;
+    }
+}

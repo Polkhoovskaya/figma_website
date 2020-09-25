@@ -1,0 +1,68 @@
+.joinMainSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+.joinText {
+    font-size: 3.5em;
+    font-weight: bold;
+    margin: 0;
+}
+
+.joinText span {
+    color: #8b378c;
+}
+
+.joinForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #202027;
+    display: flex;
+    width: 50vw;
+    max-width: 50%;
+    padding: 2rem 4rem;
+    border-radius: 20px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.inputGroup:last-child {
+    margin-bottom: 0;
+}
+
+.inputGroup label {
+    margin-bottom: 0.5rem;
+}
+
+.inputGroup input {
+    outline: none;
+    background: none;
+    border: solid #1762a7 1px;
+    border-radius: 5px;
+    font-size: 1em;
+    color: inherit;
+    padding: 0.5em;
+}
+
+.inputGroup input:focus {
+    border-color: ivory;
+}
+
+@media (max-width: 800px) {
+    .joinMainSection {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .joinForm {
+        width: 70vw;
+        max-width: 90%;
+    }
+}
